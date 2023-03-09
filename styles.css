@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'OpenGostTypeA';
+  src: url('fonts/OpenGostTypeA-Regular.eot');
+  src: url('fonts/OpenGostTypeA-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/OpenGostTypeA-Regular.woff2') format('woff2'),
+       url('fonts/OpenGostTypeA-Regular.woff') format('woff'),
+       url('fonts/OpenGostTypeA-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  max-width: 768px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background: #f5efe6;
+  font-size: 14px;
+  font-family: OpenGostTypeA, monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_title,
+.header_logo {
+  font-size: 3em;
+}
+
+.menu {
+  max-width: 1024px;
+  margin: 60px auto 20px;
+  padding: 20px 0;
+}
+
+.menu_block {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu_header {
+  margin-bottom: 7px;
+  font-size: 2em
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5em;
+}
+
