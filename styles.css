@@ -9,18 +9,46 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DolomanPavljenko';
+  src: url('fonts/DolomanPavljenko.eot');
+  src: url('fonts/DolomanPavljenko.eot?#iefix') format('embedded-opentype'),
+       url('fonts/DolomanPavljenko.woff2') format('woff2'),
+       url('fonts/DolomanPavljenko.woff') format('woff'),
+       url('fonts/DolomanPavljenko.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   max-width: 768px;
   margin: 20px auto;
   padding: 0 20px;
-  background: #f5efe6;
   font-size: 14px;
-  font-family: OpenGostTypeA, monospace;
+  color: #000;
+  position: relative;
+  font-family: DolomanPavljenko, OpenGostTypeA, monospace;
+  letter-spacing: .2em;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  transform: rotate(-90deg) translate(0, -100%);
+  transform-origin: 100% 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-title {
+  text-align: right;
+  font-size: 3em;
+  letter-spacing: .35em;
+}
+
+.header-title--bigger-font {
+  font-size: 16em;
+  letter-spacing: .25em;
+  margin: -0.25em -0.25em 0 0;
 }
 
 .header_title,
@@ -29,26 +57,98 @@ header {
 }
 
 .menu {
-  max-width: 1024px;
-  margin: 60px auto 20px;
+  font-size: 1.5em;
+  margin: 30px auto 20px;
   padding: 20px 0;
+  position: relative;
 }
 
 .menu_block {
-  margin: 15px 0;
+  margin: 40px 0;
   padding: 0;
   list-style: none;
 }
 
+.menu_block:first-child {
+  margin-top: 0;
+}
+
+.menu_block:last-child {
+  margin-bottom: 0;
+}
+
 .menu_header {
-  margin-bottom: 7px;
-  font-size: 2em
+  margin-bottom: 10px;
+  color: #40bfc5;
+  font-weight: 600;
+}
+
+.menu_image {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: 42%;
 }
 
 .menu-item {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 1.5em;
 }
 
+.footer {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.footer_line--blue {
+  color: #40bfc5
+}
+
+.footer_line--bigger-font {
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 530px) {
+  .header-title {
+    font-size: 2.8em;
+    letter-spacing: .3em;
+  }
+  .header-title--bigger-font {
+    font-size: 13em;
+    letter-spacing: .2em;
+    margin: -0.3em -0.23em 0 0;
+    line-height: 1;
+  }
+
+  .menu_image {
+    position: static;
+    width: 100%;
+  }
+
+  .menu {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    transform: none;
+    position: static;
+  }
+  .header-title {
+    text-align: right;
+    font-size: 2em;
+    letter-spacing: .3em;
+  }
+  .header-title--bigger-font {
+    font-size: 7em;
+    letter-spacing: .1em;
+    margin: -0.2em -0.1em 0 0;
+  }
+  .menu {
+    margin-top: 0;
+  }
+}
