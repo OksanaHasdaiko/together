@@ -98,6 +98,7 @@ header {
 
 .menu-item--orange {
   color: #fc9804;
+  font-weight: 600;
 }
 
 .note {
@@ -111,8 +112,8 @@ header {
   margin-right: 8px;
   margin-top: 3px;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
 }
 
 .footer {
