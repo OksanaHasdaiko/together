@@ -96,6 +96,25 @@ header {
   list-style: none;
 }
 
+.menu-item--orange {
+  color: #fc9804;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+}
+
+.note_circle {
+  background: #fc9804;
+  display: block;
+  margin-right: 8px;
+  margin-top: 3px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
 .footer {
   text-align: center;
   font-size: 1.4em;
